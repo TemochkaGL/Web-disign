@@ -1,0 +1,101 @@
+
+.block1{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;    
+    padding: 0.5em;
+    border: solid var(--shapka);
+    background: var(--main);
+    align-content: center;
+    align-items: center;
+}
+
+.block2{
+    display: flex;
+    flex-direction: column;
+}
+.block2 label>*{
+    margin-right: 10px;
+}
+
+.block3{
+
+}
+
+.block4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block4 input{
+    width:45vw;
+}
+
+label input{
+    font-size: 16pt;
+    margin-top: 10px;
+    background: #e9e3e0  ;
+}
+
+form{
+    padding: 1px;
+}
+form div label > *{
+    margin-left: 10px;
+}
+form{
+    color: var(--white);
+    font-size: 16pt;
+}
+
+.ratio{
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+form label{
+    padding-top: 12px;
+}
+
+.buton input{
+    margin: auto;
+    padding: auto;
+}
+form div.boton{
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#error{
+    color: rgb(255 231 231);
+    height: 1em;
+    font-size: 20pt;
+    margin: auto;
+}
+
+form div.boton input{
+    display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 24px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: none;    
+	border-radius: 3px;
+	height: 37px;
+	line-height: 37px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-decoration: none;
+	color: var(--onyx);
+	background-color:#e9e3e0;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	transition: box-shadow .18s ease-out,background .18s ease-out,color .18s ease-out;
+}

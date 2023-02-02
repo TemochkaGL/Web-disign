@@ -1,0 +1,155 @@
+:root {
+	--pink: #F3DFD7;
+	--black: #0c2028;
+	--white: #FEFBFA;
+	--shapka: #827A77;
+	--main:  #827A77;
+	--onyx: #3d3d3d;
+}
+
+.light-theme {
+  --bg: var(--pink);
+  --fontColor: var(--black);
+  --aColor:  var(--white);
+}
+
+.dark-theme{
+	--bg: var(--black);
+	--fontColor: var(--white);
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: var(--bg);
+	font-family: Montserrat;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-between;
+}
+
+header{
+	display: flex;
+	background-color: var(--shapka);
+	width: 100%;
+	text-transform: uppercase;
+}
+
+
+.logotype{
+	display: contents;
+
+}
+
+.logo{
+	width: 60px;
+	height: fit-content;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+.zagolovok{
+	text-align: center;
+	justify-self: center;
+
+}
+
+.menu{
+ display:flex;
+ justify-content: space-around;
+ padding: 0.2em;
+}
+
+h1{
+	color: var(--white	);
+	font-weight: 500;
+	margin: 0;
+	text-align: center;
+	font-size: 18pt;
+}
+
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: var(--aColor);
+	font-size: 10pt;
+}
+
+a:hover{
+	text-decoration: var(--onyx) underline;
+	/*color: var(--pink);*/
+	text-decoration-color: var(--pink);
+}
+
+header .logotype a{
+	padding: 0.2em;
+}
+
+footer{
+	/*position: initial;*/
+  /*bottom: 0;*/
+	margin: 0;
+	width: 100%;
+  height: auto;
+  color: var(--white);
+  background: var(--onyx);
+  clear:both;
+  text-transform: uppercase;
+  
+}
+
+.container-footer{
+	padding-top: 0.4em;
+	padding-bottom: 0.2em;
+	display: flex;
+	font-size: 10pt ;
+	text-align: center;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+#strelka{
+	padding-left: 0.3em;
+}
+
+.avtor> * + * {
+	padding-top:0.35em;
+	text-transform: none;
+}
+
+.navigation .toppage img{
+	width: 0.8em;
+	height: auto;
+	filter: invert(90%) ;
+}
+
+.social-link{
+	padding-top: 0.2em;
+	margin-bottom:-0.1em ;
+}
+
+.social-link a img{
+	width: 2em;
+	height: auto;
+	filter: invert(90%);
+	margin-bottom: auto;
+}

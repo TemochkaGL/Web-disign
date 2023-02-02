@@ -1,0 +1,56 @@
+img{
+    height: 450px
+}
+
+.block1{
+    animation-name: rotating;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;    
+    padding: 0.5em;
+    border: solid var(--shapka);
+    background: var(--main);
+    align-content: center;
+    align-items: center;
+    animation: rotating 4s infinite;
+    animation-play-state: paused;
+}
+
+.block1:hover{
+    animation-play-state: running;
+
+}
+
+.block1 p{
+    padding-top: 0.6em;
+    color: var(--white);
+    font-size: 18pt;
+}
+
+.block2{
+    background: var(--white);
+    max-width: 50vw ;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: skew 6s infinite;
+}
+
+.block2:hover{
+}
+
+footer{
+    z-index: 1;
+}
+
+
+@keyframes rotating { 
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+
+@keyframes skew{
+    from { transform: skew(0deg); }
+    to { transform: skew(40deg); }
+}
